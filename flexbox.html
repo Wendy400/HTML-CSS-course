@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+<!-- Flexbox is generally a flexible container-
+      -It allows you to modify your page without strict control
+       - A similarity with css grid is that it maintains vertical alignment
+       - A major difference is tha in flexbox elements keep their width when moved around
+         unlike in css grid the width changes when elements are moved around 
+         because we set the grid-template-column to contain values that match the column numbers, 
+         so switching an element that was i  position 1 to position 2, it will take the measurements of the new positions check grid.html file
+         but in flex box the item \mooves with its measurements -->
+            
+    
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="display:flex;
+                    flex-direction: row;">
+            <div style="background-color: aqua;"> div1 text </div>
+            <div style="background-color: blueviolet;"> div2 <p> text</p> </div>
+        </div>
+
+
+        <div style="display:flex;
+                    flex-direction: row;
+                    margin-top: 30px;">
+            <div style="background-color: aqua; 
+                        width: 100px"> 100px 
+            </div>
+            <div style="background-color: blueviolet; 
+                        flex: 1;"> flex1 
+            </div>
+        </div>
+
+
+        <div style="display:flex;
+                    flex-direction: row;
+                    margin-top: 30px;">
+
+             <div style="background-color: blueviolet; 
+                        flex: 1;"> flex1 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        flex: 2"> flex2
+            </div>
+        </div>
+
+
+
+ <P>JUSTIFY CONTENT CENTER</P>       
+        <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+
+
+ <P> JUSTIFY-CONTENT START</P>       
+        <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: start;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+
+
+ <P>JUSTIFY-CONTENT END</P>    
+              <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: end;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+
+
+<P> JUSTIFY-CONTENT SPACE BETWEEN</P>
+        <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+
+
+
+<P> JUSTIFY-CONTENT SPACE AROUND</P>
+        <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+
+
+<p> JUSTIFY-CONTENT SPACE EVENLY</p>
+        <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+        
+
+
+  
+  
+   <p>  Justify content space between, align-items start</p>      
+         <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: start ;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+
+
+        <p>  Justify content space between, align-items center</p>      
+         <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center ;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+
+
+        <p>  Justify content space between, align-items end</p>      
+         <div style="display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: end ;
+
+
+                    margin-top: 30px;
+                    height: 70px;
+                    border-width: 1px ;
+                    border-style: solid;
+                    border-color: gray; ">
+
+             <div style="background-color: blueviolet; 
+                        width: 100px;"> 100px 
+            </div>       
+            <div style="background-color: plum; 
+                        width: 100px"> 100px 
+            </div>
+            
+            <div style="background-color: aqua; 
+                        width: 100px;"> 100px
+            </div>
+        </div>
+
+        
+
+    </body>
+</html>

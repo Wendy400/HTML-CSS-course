@@ -1,0 +1,63 @@
+.subscribe-button {     
+    /* this is a class selector it targets a group of elements*/
+    background-color: rgb(205, 0, 0); 
+    color: white;
+    border: none;
+    height: 38px; 
+    width: 110px;
+    /* use padding instead of height and width, 
+    the set measurements are fixed and if more text was to be added it would spill below the button measurements. 
+    for padding it resizes and retains the set measurements*/
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    vertical-align: top; /* button is aligned at the top of the web page*/
+  }
+  .subscribe-button:hover { /* An example of a pseudo selector*/
+    opacity: 0.7;
+  }
+  .subscribe-button:active{
+    opacity: 0.5;
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(42, 118, 215); 
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(42, 112, 203);
+    height: 36px;
+    width: 64px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 12px; /* margin -space outside button. padding- space inside the button*/
+    vertical-align: top;
+    transition: background-color 1s, color 1s;
+  }
+ /* you can view more on this code by right clicking on an empty space on the webpage and click inspect.*/
+
+
+   .join-button:hover{
+    background-color: rgb(42, 112, 203);
+    color: white;
+   }
+   .join-button:active{
+    opacity: 0.7;
+   }
+
+  .tweet-button{
+    background-color: rgb(2, 159, 254);
+    color: white;
+    height: 37px;
+    width: 74px;
+    border-radius: 18px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer; vertical-align: top;
+
+  }
+    .tweet-button:hover{
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }

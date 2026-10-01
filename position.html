@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title> Position Practice</title>
+
+<!-- position takes four values, top,bottom, left, right
+      if i set styles at 
+      position: fixed ; left: 0px; means the element will be at the left edge of the webpage
+      position: fixed; left 50px; right:50px; here it will stretch and leave 50px to the right and 50 to the left 
+      height and width can be used too. if you want your browser to have a fixed value ie one that not resize.
+      
+      - z- index determines which feature gets,to be displayed ,priority,over the other. 
+        the higher the z-index the higher the priority-->
+
+
+  </head>
+
+  <body style="height: 3000px;
+            padding-top:60px;
+            padding-left: 80px;"> <!-- best practice to add space at the top/ left side of your page-->
+
+
+<!--POSITION FIXED -->
+
+    <div style="background-color: black; 
+                color: white;
+                position: fixed;
+                top:0px;
+                left:0px;
+                right:0px;
+                height: 50px;
+                z-index: 100;">
+                 header
+        
+
+        
+                
+    </div>
+     <div style="background-color: greenyellow;
+                color:white;
+                position:fixed;
+                left:0px;
+                bottom:0px;
+                top: 50px;
+                width: 72px;
+                "> sidebar
+
+
+<!--here i have added a position absolute inside a position fixed ,ie the side bar
+    -this feature enables you to add elements inside another, eg if i want to add text to the sidebar
+    - here top 0 and right 0 means top of the sidebar and right of sidebar , not top of page -->
+
+       <div style="position:absolute;
+                 background-color: brown;
+                 color: white;
+                 right: 0px;
+                 top:0px;">  x
+
+        </div>
+                
+            
+            
+            
+            
+      </div>
+
+
+
+<!-- POSITION ABSOLUTE
+       - it positions element on the page and it moves as you scroll the page.
+       - in positions fixed it positions elements in the browser window, the very top part and elements do not move when you scroll the page-->
+
+
+     <div style="position:absolute;
+                 background-color: brown;
+                 color: white;
+                 right: 10px;
+                 top:60px;">  absolute
+
+     </div>
+
+        
+<!-- POSITION STATIC 
+      -this is the default value ,  unless changed elements are in position static-->   
+    
+      <div style="background-color: lightblue; 
+                height: 200px;
+                width: 200px;
+                position: static;
+                " >
+                div1 
+            
+            
+       </div>
+
+
+
+<!-- POSITION RELATIVE
+        -it does not change anything in the page but when position absolute is added
+         - styles will be in relative we to the outer div , so just like above here top 10px will be 
+           10pox from the container,div 2, not from the page.
+           
+        - an important feature when designing web pages that need eg time like shown below-->       
+       <div style="background-color: lightpink;
+                 height: 200px;
+                 width: 200px;
+                 position: relative;">
+                  div2
+
+             <div style="position:absolute;
+                 background-color: black;
+                 color: white;
+                 right: 10px;
+                 bottom: 10px;
+                 ">  5:00
+
+             </div>
+
+                  
+
+                
+        </div>
+    
+  </body>
+
+
+</html>

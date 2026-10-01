@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid practice</title>
+        <!-- A grid is a layout that has rows and columns-->
+        <!-- Grids maintain alignment better than other layout methods like block method. 
+              display: block lacks vertival alignment-->
+        <!-- div treats content inside it as a block/ as a container with information.-->
+    </head>
+    <body style="padding-bottom: 1000px;"> <!-- the space is added to allow scrolling-->
+        <div style=" display: grid;
+                     grid-template-columns: 100px 100px;"> 
+                     <!--when text is added in div 2 the rows automatically adjust, hence the vertical alignment that we need unlike block layout.
+                          in the latter only div 2 would have adjusted leaving an uneven layout-->
+
+
+            <div style="background-color: lightblue;">div 1 </div>
+            <div style="background-color: lightpink;">div 2<p> text</p> </div>
+        </div>
+
+
+        <div style=" display: grid;
+                     grid-template-columns: 100px 100px 200px; 
+                     margin-top: 20px;"> 
+                     <!-- -number of grid columns determines the number of columns in the grid. 
+                          -here we have to include another div, div3 for the changes to be seen
+                          -you can include as many columns as you wish as long as you add the divs as well.
+                          - when the elements ie , divs are more than the number of grid columns the extra wrap below to create another row as displayed by repetition of div2-->
+                     
+
+
+            <div style="background-color: lightblue;">div 1 </div>
+            <div style="background-color: lightpink;">div 2<p> text</p> </div>
+            <div style="background-color: lightgreen;">div 3 </div>
+            <div style="background-color: lightpink;">div 2</div>
+        </div>
+
+
+<!-- FREE SPACE FEATURE, fr-->
+ <!--Means take up the remaining space when the page is resized.
+     -->
+         <div style=" display: grid;
+                     grid-template-columns: 100px 1fr; 
+                     margin-top: 20px;"> 
+                     
+                     
+            <div style="background-color: lightblue;">div 1 </div>
+            <div style="background-color: lightpink;">div 2 </div>
+            
+         </div>
+
+
+
+<!-- Here the first column has 100px , the second is 1fr and the third is 2fr. meaning
+      the third column will take up twice the space of the second column, more like a fraction 1/3, and 2/3 respectifully-->
+         <div style=" display: grid;
+                     grid-template-columns: 100px 1fr 2fr; 
+                     margin-top: 20px;"> 
+                     
+                     
+            <div style="background-color: lightblue;">div 1 </div>
+            <div style="background-color: lightpink;">1fr</div>
+            <div style="background-color: lightgreen;">2fr </div>
+         </div>
+
+<!-- here we added a 2 by 3 grid, and added column and row gaps-->         
+
+         <div style=" display: grid;
+                     grid-template-columns: 1fr 1fr 1fr; 
+                     margin-top: 20px;
+                     column-gap: 20px;
+                     row-gap: 40px;
+                     "> 
+                     
+                     
+            <div style="background-color: lightblue; height: 200px;">1fr </div>
+            <div style="background-color: lightpink; height: 200px">1fr</div>
+            <div style="background-color: lightgreen; height: 200px">1fr </div>
+            <div style="background-color: lightpink; height: 200px">1fr</div>
+            <div style="background-color: lightgreen; height: 200px">1fr </div>
+            <div style="background-color: lightblue; height: 200px;">1fr </div>
+
+         </div>
+
+
+    </body>
+</html>
